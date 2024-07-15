@@ -11,5 +11,4 @@
 void PORT_voidInit(void);
 
 
-
 #endif /* PORT_INTERFACE_H_ */
