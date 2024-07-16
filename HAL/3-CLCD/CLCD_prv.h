@@ -1,15 +1,15 @@
-#ifndef CLCD_PRV_H_
-#define CLCD_PRV_H_
+#ifndef CLCD_PRV_H
+#define CLCD_PRV_H
 
-#define FOUR_BIT_MODE    1
-#define EIGHT_BIT_MODE   2
+#define FOUR_BIT		1
+#define EIGHT_BIT		2
 
-#if CLCD_u8BIT_MODE == FOUR_BIT_MODE
+#define GND_CONNECTED	1
+#define DIO_CONNECTED	2
 
+#if CLCD_u8BIT_MODE == FOUR_BIT
 static void voidSetHalfDataPort(uint8 Copy_u8Data);
-
 #endif
-static void voidSetCtrlPins(uint8 Copy_u8RsValue, uint8 Copy_u8RwValue);
 
 static void voidSendEnablePulse(void);
 
